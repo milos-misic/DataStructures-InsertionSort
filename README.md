@@ -1,4 +1,4 @@
-# DataStructures
+# DataStructures - InsertionSorts
 Data structures implementations in JavaScript.
 
 InsertionSort
