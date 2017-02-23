@@ -1,0 +1,43 @@
+* {
+	word-break:break-all;
+	background: #f9eeed;
+}
+h1 {
+	margin: 0px !important;
+}
+.order-area > div {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+}
+.btn {
+	margin-top: 10px;
+	padding: 5px 50px;
+	background: red;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	border: 2px solid white;
+}
+.white {
+	background: white;
+	color: red;
+	border: 2px solid red;
+}
+.random-area,
+.selection-area,
+.order-area {
+	margin: 15px;
+	padding: 5px;
+}
+.random-area,
+.selection-area {
+	border: 2px solid red;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+button:disabled {
+	opacity: 0.25;
+}
+
