@@ -1,11 +1,12 @@
-# DataStructures - InsertionSorts
+# DataStructures
 Data structures implementations in JavaScript.
 
-InsertionSort 
+## InsertionSort 
 
 A simple setup for insertionSort. It shows the time of excecutions needed for sorting an array, as well.
 
-----script.js---- 
+**----script.js----** 
+
 Consists of few functions: 
 
 1. Random array - generates random array after user sets its size 
@@ -14,14 +15,14 @@ Consists of few functions:
 
 3. Reset, enableButtons, disableButtons are few helper functions for proper HTML setup in different cases
 
-----index.html---- 
+**----index.html----** 
 
 A simple HTML structure.
 
-----style.css---- 
+**----style.css----** 
 
 A simple style css.
 
-----normalize.css---- 
+**----normalize.css----** 
 
 It makes browsers render all elements more consistently and in line with modern standards.
