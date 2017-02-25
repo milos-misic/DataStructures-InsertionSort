@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include <time.h>
 
 int main() {
   int insertionArray[5];
+
+  clock_t begin = clock();
+  
   insertionArray[0] = 32243;
   insertionArray[1] = 12;
   insertionArray[2] = 200;
@@ -20,8 +24,13 @@ int main() {
     insertionArray[i + 1] = key;
   }
 
+  clock_t end = clock();
+
+  double performance = (double)(end - begin) / CLOCKS_PER_SEC;
+
   for(i = 0; i < 5; i++) {
     printf("%d\n", insertionArray[i]);
   }
+  printf("Performance Results: %f\n", performance);
   return 0;
 }
