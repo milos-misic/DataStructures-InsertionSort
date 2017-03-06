@@ -5,6 +5,9 @@
 h1 {
 	margin: 0px !important;
 }
+a {
+	text-decoration: none;
+}
 .order-area > div {
 	float: left;
 	width: 50%;
@@ -39,5 +42,43 @@ h1 {
 }
 button:disabled {
 	opacity: 0.25;
+}
+
+/*==========Menu==========*/
+.menu {
+	width:200px;
+	height: 100%;
+	position: absolute;
+	left: -200px;
+	top:0;
+	background: red;
+}
+.menu ul {
+	background: red;
+}
+.menu li {
+	list-style: none;
+	padding: 5px;
+	background-color: red;
+}
+.menu li a {
+	color: white;
+} 
+#closeButton {
+	background-color: red;
+}
+#menuButton,
+#closeButton {
+	margin-top: 10px;
+}
+#menuButton a,
+#closeButton a {
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	background: white;
+	padding: 10px;
+	color: red;
+	border-radius: 0px 0px 5px 0px;
 }
 

@@ -6,38 +6,54 @@
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 	</head>
 	<body>
-		<div class="random-area">
-			<h1>Random Array</h1>
-			<p id="random-array"></p>
-			<label>Enter size of the array:</label>
-			<input id="array-size" type="text" placeholder="Array Size...">
-			<br>
-			<button id="random" class="btn">RANDOM</button>
-			<button id="reset" class="btn white" disabled>RESET</button>
-		</div>
-		<div class="selection-area">
-			<h1>Choose the order!</h1>
-			<form>
-				<label>ASC</label>
-				<input id="asc-radio" type="radio" name="order" value="asc"  checked disabled> 
-				<label>DESC</label>
-				<input id="desc-radio" type="radio" name="order" value="desc" disabled>
-			</form>
-			<button id="test" class="btn" disabled>ORDER</button>
-		</div>
-		<div class="order-area">
-			<div class="asc-area">
-				<h1>Ascending Order</h1>
-				<p id="asc-numbers"></p>
-				<p id="asc-time"></p> 
+		<header>
+			<div class="menu">
+					<div id="closeButton">
+						<a href=#>Close</a>
+					</div>
+					<ul>
+						<li><a href="#insertion-sort">Insertion Sort</a></li>
+					</ul>
 			</div>
-			<div class="desc-area">
-				<h1>Descending Order</h1>
-				<p id="desc-numbers"></p>
-				<p id="desc-time"></p>
+			<div id="menuButton">
+				<a href="#">Menu</a>
 			</div>
-		</div>
+		</header>
+		<section id="insertion-sort">
+			<div class="random-area">
+				<h1>Random Array</h1>
+				<p id="random-array"></p>
+				<label>Enter size of the array:</label>
+				<input id="array-size" type="text" placeholder="Array Size...">
+				<br>
+				<button id="random" class="btn">RANDOM</button>
+				<button id="reset" class="btn white" disabled>RESET</button>
+			</div>
+			<div class="selection-area">
+				<h1>Choose the order!</h1>
+				<form>
+					<label>ASC</label>
+					<input id="asc-radio" type="radio" name="order" value="asc"  checked disabled> 
+					<label>DESC</label>
+					<input id="desc-radio" type="radio" name="order" value="desc" disabled>
+				</form>
+				<button id="test" class="btn" disabled>ORDER</button>
+			</div>
+			<div class="order-area">
+				<div class="asc-area">
+					<h1>Ascending Order</h1>
+					<p id="asc-numbers"></p>
+					<p id="asc-time"></p> 
+				</div>
+				<div class="desc-area">
+					<h1>Descending Order</h1>
+					<p id="desc-numbers"></p>
+					<p id="desc-time"></p>
+				</div>
+			</div>
+		</section>
 
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>

@@ -1,15 +1,15 @@
 var 	t0,
-	t1,
-	t2,
-	randomArray,
-	randomArea		= document.querySelector('#random-array'),
-	arraySize			= document.getElementById('array-size'),
-	ascRadio 			= document.querySelector('#asc-radio'),
-	descRadio 		= document.querySelector('#desc-radio'),
-	ascNumbersArea 	= document.querySelector('#asc-numbers'),
-	descNumbersArea 	= document.querySelector('#desc-numbers'),
-	ascTimeArea		= document.getElementById('asc-time'),
-	descTimeArea		= document.getElementById('desc-time');
+		t1,
+		t2,
+		randomArray,
+		randomArea			= document.querySelector('#random-array'),
+		arraySize				= document.getElementById('array-size'),
+		ascRadio 				= document.querySelector('#asc-radio'),
+		descRadio 			= document.querySelector('#desc-radio'),
+		ascNumbersArea 		= document.querySelector('#asc-numbers'),
+		descNumbersArea 	= document.querySelector('#desc-numbers'),
+		ascTimeArea			= document.getElementById('asc-time'),
+		descTimeArea		= document.getElementById('desc-time');
 
 //Reset
 document.getElementById('reset').addEventListener('click', function() {
@@ -97,4 +97,12 @@ function disableButtons () {
 	descRadio.disabled = true;
 }
 	 
-	
+//Menu
+jQuery(document).ready(function($) {
+ $('#menuButton').click(function() {
+	$('.menu').animate({"left":"0px"}, 500);
+});	
+$('#closeButton').click(function() {
+	$('.menu').animate({"left":"-200px"}, 500);
+});
+}(jQuery));

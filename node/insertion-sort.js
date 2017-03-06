@@ -10,7 +10,7 @@ function randomArray(n) {
 
   for(var i = 0; i < n; i++) {
     var randomNumber = Math.random()
-    var roundNumber = Math.floor(randomNumber * 10000)
+    var roundNumber = Math.floor(randomNumber * 100)
 
     unsortedArray[i] = roundNumber
   }
